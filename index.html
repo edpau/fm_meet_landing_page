@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>Frontend Mentor | Meet landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./images/logo.svg"
+        alt="meet"
+        width="119"
+        height="28"
+      />
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__image-container">
+            <img
+              class="hero__image--mobile"
+              src="./images/tablet/image-hero.png"
+              alt=""
+              width="820"
+              height="303"
+            />
+          </div>
+          <img
+            class="hero__image--desktop-left"
+            src="./images/desktop/image-hero-left.png"
+            alt=""
+            width="394"
+            height="303"
+          />
+          <img
+            class="hero__image--desktop-right"
+            src="./images/desktop/image-hero-right.png"
+            alt=""
+            width="394"
+            height="303"
+          />
+          <div class="hero__content">
+            <h1 class="hero__title">Group Chat for Everyone</h1>
+            <p class="hero__description">
+              Meet makes it easy to connect with others face-to-face virtually and
+              collaborate across any device.
+            </p>
+            <div class="hero__actions">
+              <button class="hero__button hero__button--download">
+                Download <span class="hero__button-version">v1.3</span>
+              </button>
+              <button class="hero__button hero__button--info">What is it?</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider" role="separator" aria-label="Section 01">
+        <span class="divider__line" aria-hidden="true"></span>
+        <span class="divider__circle" aria-hidden="true">01</span>
+      </div>
+
+      <section class="main-content">
+        <ul class="main-content__image-list">
+          <li class="main-content__image-item">
+            <img
+              class="main-content__image"
+              src="./images/desktop/image-woman-in-videocall.jpg"
+              alt="A woman participating in a video call on her laptop"
+            />
+          </li>
+          <li class="main-content__image-item">
+            <img
+              class="main-content__image"
+              src="./images/desktop/image-women-videochatting.jpg"
+              alt="Three women engaged in a video chat using a mobile device"
+            />
+          </li>
+          <li class="main-content__image-item">
+            <img
+              class="main-content__image"
+              src="./images/desktop/image-men-in-meeting.jpg"
+              alt="A man participating in a meeting via laptop in a professional setting"
+            />
+          </li>
+          <li class="main-content__image-item">
+            <img
+              class="main-content__image"
+              src="./images/desktop/image-man-texting.jpg"
+              alt="A man texting on his mobile phone in his sitting room"
+            />
+          </li>
+        </ul>
+        <div class="main-content__text-block">
+          <p class="main-content__text main-content__text--highlighted">
+            Built for modern use
+          </p>
+          <h2 class="main-content__heading">
+            Smarter meetings, all in one place
+          </h2>
+          <p class="main-content__text">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="divider divider--section-02"
+      role="separator"
+      aria-label="Section 02"
+    >
+      <span class="divider__line" aria-hidden="true"></span>
+      <span class="divider__circle" aria-hidden="true">02</span>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <h2 class="footer__heading">Experience more together</h2>
+        <p class="footer__text">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <button class="footer__button">
+          Download <span class="footer__button-version">v1.3</span>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
