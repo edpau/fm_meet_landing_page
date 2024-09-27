@@ -145,6 +145,7 @@ body {
   place-items: center;
   color: var(--color-divider-text);
   background-color: var(--color-primary);
+  font-weight: 900;
 }
 
 .divider--section-02 {
