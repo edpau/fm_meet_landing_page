@@ -334,6 +334,11 @@ body {
 }
 
 @media (min-width: 1130px) {
+
+  .header__logo {
+    margin: 80px auto 0;
+  }
+
   .hero__image-container{
     display: none;
   }
