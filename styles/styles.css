@@ -353,15 +353,12 @@ body {
   .hero__image--desktop-right{
     display: block;
     order: 3;
-    /* position: relative; */
     margin-top: 120px;
   }
 
   .hero {
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
-    overflow-y: visible;
   }
 
   .hero__container {
