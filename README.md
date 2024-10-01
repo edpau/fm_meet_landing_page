@@ -76,6 +76,7 @@ Users should be able to:
 
 #### Overlay background color on footer background images 
 
+##### Solution 1 (not as good as Solution 2)
 - I experimented with background-blend-mode:, the result didn't match the figma design, the background image color didn't blend under the background color.
 - I used pseudo-element instead to achieve the result.
 
@@ -92,11 +93,54 @@ Users should be able to:
   - position: relative;- Ensures the content is positioned relative to the footer.
   - z-index: 2;- Ensures the content is above the overlay.
 
+```CSS
+.footer {
+  background-image: url(../images/mobile/image-footer.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 64px 32px;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background-overlay);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.footer__content {
+  position: relative;
+  z-index: 2;
+}
+```
+
+##### Solution 2
+- Using multiple backgrounds
+- much cleaner solution 
+- further reading [Using multiple backgrounds](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds)
+
+```CSS
+.footer {
+  background: linear-gradient(
+      var(--color-background-overlay),
+      var(--color-background-overlay)
+    ),
+    url("../images/mobile/image-footer.jpg") top center / cover no-repeat;
+}
+```
+
 
 
 ### Useful resources
 
 - [Resource 1](https://stackoverflow.com/questions/35847458/how-to-resize-an-image-cropping-it-equally-on-each-side-with-css) - Image equal cropping on window resize.
+- [Using multiple backgrounds](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds) - Overlay background color on footer background images (Solution 2)
 
 
 ## Author
@@ -105,3 +149,5 @@ Users should be able to:
 - Frontend Mentor - [@edpau](https://www.frontendmentor.io/profile/edpau)
 
 
+## Acknowledgments
+- Thank you [@elisilk](https://www.frontendmentor.io/profile/elisilk) - Thank you for helping me improve my code and sharing how you overlay background color on footer background images. 
