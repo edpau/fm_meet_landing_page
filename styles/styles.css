@@ -42,6 +42,10 @@ body {
   margin: 48px auto 0;
 }
 
+.hero {
+  overflow: hidden;
+}
+
 .hero__image-container {
   display: flex;
   justify-content: center;
